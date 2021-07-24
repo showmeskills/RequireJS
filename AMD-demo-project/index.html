@@ -7,8 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <div data-bind="click:HandleClick">点击</div>
-
-    <script src="./libs/requireJs/require.js" data-main="dest/main" async="true" defer></script>
+    <div>点击</div>
+    <ul data-bind="foreach:{data:Accounts,as:'Account'}">
+        <li>
+            Name:<span data-bind="text:Account.Name"></span>
+            Balance:<span data-bind="text:Account.Balance"></span>
+        </li>
+    </ul>
+    Name:<input type="text" data-bind="value:NewName"/></br>
+    Balance<input type="text" data-bind="value:NewBalance"/></br>
+    <button data-bind="click:HandleClick">add</button>
+    <script src="./libs/requireJs/require.js" data-main="dest/app/main" async="true" defer></script>
 </body>
 </html>
