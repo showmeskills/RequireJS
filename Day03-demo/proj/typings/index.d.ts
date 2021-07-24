@@ -1,0 +1,1 @@
+///<reference path="/Users/yantinglong/Documents/javascript/RequireJS/Day03-demo/proj/node_modules/@types/knockout/index.d.ts" />
